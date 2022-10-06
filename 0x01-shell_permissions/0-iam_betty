@@ -1,2 +1,2 @@
 #!/bin/bash
-su -l 0-iam_betty betty
+sudo -l 0-iam_betty betty
