@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown 0-iam_betty betty
+su -l 0-iam_betty betty
