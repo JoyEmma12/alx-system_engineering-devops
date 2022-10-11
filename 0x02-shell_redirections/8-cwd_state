@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($TRUEKNOWLEDGE+128)) 
+ls -la > ls_cwd_content
