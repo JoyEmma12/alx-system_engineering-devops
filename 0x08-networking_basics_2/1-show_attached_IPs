@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# script that displays all active IPV4 IPS on the manchine its executed on
+
+ifconfig | awk -F "[: ]+" '/inet addr:/ { print $4 }'
