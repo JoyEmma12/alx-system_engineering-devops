@@ -1,0 +1,15 @@
+https://imgur.com/a/nnZMSbB
+
+We are adding the additional elements like
+Web server(Nginx), Application server, Database , load balancer, server in this design to avoid SPOF single point of failure.
+
+The load balancer is configured with a round-robin algorithm for distributing connections evenly across the machines.
+
+The load balancer is enabling an Active-Passive setup that is, the load balancer recognizes a failed node and then redirects its traffic to the available node and for the active-active its spreads out the traffic among multiple nodes.
+
+Database primary replica works by involving one or more applications thats connects a primary storage location and a secondary location.
+
+Issues with the infrastructure:
+
+There are no SPOF
+On security issues there are no https and firewalls to secure infrastructure and they are no monitoring.
