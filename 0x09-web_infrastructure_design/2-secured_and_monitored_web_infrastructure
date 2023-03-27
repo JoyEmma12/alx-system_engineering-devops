@@ -1,0 +1,13 @@
+https://imgur.com/a/ekQlyN2
+
+The additional elements added are 3 firewalls, SSl, 3 monitoring clients.
+
+The firewalls and ssl are added to manage the traffic between the servers and give security to them, while the monitoring clients are there to monitor the servers and give alert if anything goes wrong.
+
+The firewalls are present to manage and block network traffic and allow remote  access to a private network.
+
+The type of monitoring used is the DataDog monitoring.
+
+The monitoring clients is getting data from the load balancer.
+
+To monitor the web server QPS one can use the open source tools to monitor the web server qps such as Nagios, Cacti and Munin or Log analysis tools.
