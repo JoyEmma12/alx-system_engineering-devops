@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# SSH configuration file for the local SSH client
+
+Host 100.25.36.157
+	User ubuntu
+	IdentityFile ~/.ssh/school
+	BatchMode yes
