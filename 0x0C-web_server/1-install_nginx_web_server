@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 # Install nginx on web-01
 # Nginx should listen on port 80
-
 # When querying nginx at it root with a GET request
 # It must contain the string Hello World!
 
 apt-get update
-apt-get install -y nginx
-ufw allow "Nginx HTTP"
-echo "Hello World!" > /var/www/index.html
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo "Hello World!" > /var/www/html/index.html
 service nginx restart
