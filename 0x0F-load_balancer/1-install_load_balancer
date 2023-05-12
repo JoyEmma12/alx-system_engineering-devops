@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Install and configure HAproxy on Ib-01 server
+
+sudo apt-get update
+sudo apt-get install haproxy
+
+echo "
+
+frontend http_front
+    bind *:80
+    mode http
+    default_backend http_back
+
+
+backend http_back
+    mode http
+    balance roundrobin
+    server 181329-web-01 100.25.36.157 check
+    server 181329-web-02 100.25.154.130 check
+    " >> /etc/haproxy/haproxy.cfg
+
+sudo service haproxy restart
