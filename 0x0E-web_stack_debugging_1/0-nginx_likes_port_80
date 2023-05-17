@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Configure Nginx on port 80
 
-ln -sf /etc/nignx/sites-available/default /etc/nginx/sites-enabled/default
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nignx/sites-available/default /etc/nginx/sites-enabled/default
 
 sudo service nginx start
