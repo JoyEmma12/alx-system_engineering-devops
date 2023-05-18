@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # SSH configuration file for the local SSH client
 
-Host 100.25.36.157
-	User ubuntu
+Host *
+	SendEnv LANG LC_*
+	HashKnownHosts yes
+	GSSAPIAuthentication yes
+	GSSAPIDelegateCredentials no
 	IdentityFile ~/.ssh/school
-	BatchMode yes
+	PasswordAuthentication no
