@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that uses REST API 
+Script that uses REST API
 for an employee and returns inoformation
 about his/her TODO list
 """
